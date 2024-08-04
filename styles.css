@@ -5,7 +5,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-size: calc(16px + 0.4vw);
+  
   
 }
 
@@ -50,13 +50,17 @@ a {
   font-weight: 400;
 }
 
+i {
+  font-size: 1rem;
+}
+
 .primary-btn {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.5rem 1.5rem;
   background-color: #0176d3;
   color: white;
-  border: 2px solid #0176d3;
+  border: 3px solid #0176d3;
   border-radius: 3px;
   text-decoration: none;
   text-align: center;
@@ -65,7 +69,7 @@ a {
 .primary-btn:hover {
   font-size: 1rem;
   background-color: #032d60;
-  border: 2px solid #032d60;
+  border: 3px solid #032d60;
 }
 
 .secondary-btn {
@@ -75,7 +79,7 @@ a {
   font-weight: 500;
   padding: 0.5rem 1.5rem;
   background-color: white;
-  border: 2px solid #0176d3;
+  border: 3px solid #0176d3;
   border-radius: 3px;
   text-decoration: none;
   text-align: center;
@@ -84,14 +88,15 @@ a {
 .secondary-btn:hover {
  font-size: 1rem;
  background-color: white;
- border: 2px solid #0176d3;
+ border: 3px solid black;
+ color: black;
 }
 
 
-
-
-
-
+.container {
+  width: 100%;
+  margin-inline: 2rem;
+}
 
 
 
