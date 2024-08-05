@@ -129,16 +129,18 @@ i:hover {
 
 
 .navbar {
-  
+  position: relative;
 }
 
 nav {
   width: 100%;
-  position: relative;
-  padding-block: 1.5rem;
+  padding-block: 1rem;
   background-color: white;
   color: #032d60;
   font-size: 1rem;
+  padding-inline: 1.8rem;
+  position: fixed;
+  
 }
 
 .top-menu {
@@ -213,7 +215,15 @@ nav {
 }
 
 .side-menu {
-  
+  padding-block: 0.5rem;
+  padding-top: 0;
+  padding-inline: 1.8rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 50%;
+  height: 110vh;
 }
 
 .side-menu a {
@@ -225,4 +235,42 @@ nav {
 .side-menu a:hover {
   color: blue;
   text-decoration: none;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  position: relative;
+  height: 100%;
+}
+
+.side-menu ul li {
+  margin-block: 1.4rem;
+}
+
+.side-menu ul li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-menu ul li a div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.mo {
+  position: absolute;
+  bottom: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mo p {
+  font-weight: 600;
+}
+
+.side-menu ul li:nth-child(1) {
+  margin-top: 0.5rem;
 }
