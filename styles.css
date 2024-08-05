@@ -5,6 +5,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-size: calc(16px + 0.4rem);
   
   
 }
@@ -41,7 +42,7 @@ h5 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #181818;
 }
@@ -53,7 +54,17 @@ li {
 
 a {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
+  color: #032d60;
+  transition: 0.5s;
+}
+
+a:hover {
+  font-size: 1rem;
+  font-weight: 450;
+  color: #032d60;
+  text-decoration: none;
+  color: blue;
 }
 
 i {
@@ -76,6 +87,7 @@ i {
   font-size: 1rem;
   background-color: #032d60;
   border: 3px solid #032d60;
+  color: white;
 }
 
 .secondary-btn {
@@ -104,9 +116,6 @@ i {
   margin-inline: 2rem;
 }
   
-iframe {
-  width: 90vw;
-  aspect-ratio: 16 / 9;
-  border: 3px solid black;
-  margin-inline: auto;
-}
+/*------navbar-------*/
+
+
