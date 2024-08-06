@@ -96,7 +96,7 @@ img {
 .primary-btn {
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: #0176d3;
   color: white;
   border: 3px solid #0176d3;
@@ -107,17 +107,18 @@ img {
 
 .primary-btn:hover {
   font-size: 1rem;
+  font-weight: 500;
   background-color: #032d60;
   border: 3px solid #032d60;
   color: white;
 }
 
 .secondary-btn {
-  margin: 3rem 3rem;
+  
   color: #0176d3;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: white;
   border: 3px solid #0176d3;
   border-radius: 3px;
@@ -128,6 +129,7 @@ img {
 .secondary-btn:hover {
  font-size: 1rem;
  background-color: white;
+ font-weight: 500;
  border: 3px solid black;
  color: black;
 }
@@ -176,12 +178,12 @@ nav {
 
 .left-menu .fa-xmark  {
   cursor: pointer;
-  
+  font-size: 1.38rem;
 }
 
 .left-menu .fa-bars  {
   cursor: pointer;
-  
+  font-size: 1.2rem;
 }
 
 .left-menu img {
@@ -201,8 +203,8 @@ nav {
 .right-menu a {
  color: white;
  background-color: green;
- padding-inline: 1rem;
- padding-block: 0.4rem;
+ padding-inline: 0.4rem;
+ padding-block: 0.3rem;
  text-decoration: none;
  border-radius: 0.4rem;
  
@@ -239,8 +241,9 @@ nav {
   left: 0;
   background-color: white;
   width: 50%;
-  height: 110vh;
+  height: calc(100vh - 100%);
   transition: 0.2s ease-in-out;
+  overflow-y: scroll;
 }
 
 .side-menu a {
@@ -257,7 +260,8 @@ nav {
 .side-menu ul {
   list-style-type: none;
   position: relative;
-  height: 100%;
+  max-height: 80vmax;
+  min-height: 87vh;
 }
 
 .side-menu ul li {
@@ -278,10 +282,11 @@ nav {
 }
 
 .mo {
-  position: absolute;
-  bottom: 7.1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-block: 2rem;
+  text-align: center;
+  
+ 
+  
 }
 
 .mo p {
@@ -315,7 +320,8 @@ nav {
 
 .news p {
   color: white;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.9rem;
 
 }
 
@@ -325,4 +331,62 @@ nav {
 
 .news a:hover {
   color: white;
+}
+
+/*-----head-----*/
+
+
+.head {
+  background-image: url('images/starter-sm-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+}
+
+.head .container {
+  padding-block: 5vmin;
+  padding-bottom: 8vmin;
+  padding-inline: 8vmin;
+  
+
+  
+}
+
+.head-text {
+  text-align: left;
+  margin-bottom: 5vmin;
+  
+}
+
+.head-text h1 {
+  margin-bottom: 3vmin;
+  
+}
+
+.head-btn {
+  display: flex;
+  gap: 0.5rem;
+  justify-items: flex-start;
+  align-items: center;
+  margin-top: 4vmin;
+}
+
+.head-video  {
+  margin-top: 6vmin;
+  overflow: hidden;
+  border-radius: 2rem;
+  
+  
+}
+
+.head-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+
+
+.products {
+  margin-top: 10rem;
 }
