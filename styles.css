@@ -75,23 +75,9 @@ a:hover {
   color: blue;
 }
 
-i {
-  font-size: 1rem;
-  color: black;
-  transition: 0.3s;
-  text-decoration: none;
-  
-}
 
-i:hover {
-  font-size: 1rem;
-  color: blue;
-  text-decoration: none;
-}
 
-img {
-  width: 50%;
-}
+
 
 .primary-btn {
   font-size: 1rem;
@@ -139,6 +125,10 @@ img {
   padding-inline: 1.5rem;
   width: 100%;
 }
+
+img {
+  width: 100%;
+}
   
 /*------navbar-------*/
 
@@ -159,6 +149,20 @@ nav {
   left: 0;
   right: 0;
   
+}
+
+.navbar i {
+  font-size: 1rem;
+  color: black;
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+.navbar i:hover {
+  font-size: 1rem;
+  color: blue;
+  text-decoration: none;
 }
 
 .top-menu {
@@ -347,7 +351,7 @@ nav {
 .head .container {
   padding-block: 5vmin;
   padding-bottom: 8vmin;
-  padding-inline: 8vmin;
+  padding-inline: 10vmin;
   
 
   
@@ -366,7 +370,7 @@ nav {
 
 .head-btn {
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
   justify-items: flex-start;
   align-items: center;
   margin-top: 4vmin;
@@ -386,7 +390,169 @@ nav {
 }
 
 
+/*------products section------*/
+
 
 .products {
-  margin-top: 10rem;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,250,255,1) 100%);
+  padding-top: 4rem;
 }
+
+.products .container {
+  text-align: center;
+  margin-bottom: -5.5rem;
+  
+}
+
+.p-box {
+  padding-block: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.p-card {
+  width: calc(50% - 0.75rem);
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: white;
+}
+
+.p-card img {
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.p-card-text {
+  padding: 2rem 1.5rem;
+}
+
+.p-card-text h4   {
+ margin-block: 0.8rem; 
+}
+
+.p-card-text p   {
+ margin-block: 0.8rem; 
+  
+}
+
+.p-card-text a   {
+ margin-block: 0.8rem; 
+  
+}
+
+.p-btn {
+  text-align: center;
+  margin-inline: auto;
+}
+
+/*-------cta-top-----*/
+
+.cta-top {
+  
+}
+
+.cta-top .container {
+  text-align: center;
+  padding-block: 3rem;
+  padding-inline: 8rem;
+}
+
+.cta-top .container h2 {
+  margin-bottom: 2rem;
+}
+
+.cta-top .container p {
+  margin-bottom: 2.5rem;
+}
+
+.cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+/*------skill section------*/
+
+
+.skills {
+  padding-block: 3rem;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,250,255,1) 100%);
+  text-align: center;
+}
+
+.skills .container {
+  
+}
+
+.skills .container h2 {
+  margin-bottom: 2rem;
+}
+
+.skills .container .skills-p {
+  margin-bottom: 3rem;
+  
+}
+
+.skill-box {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 1rem;
+ 
+ 
+ 
+}
+
+.skill-card {
+ width: calc(33% - 0.75rem); 
+ box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+ background-color: white;
+ border-radius: 1rem;
+ overflow: hidden;
+ text-align: left;
+}
+
+.skill-img {
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  padding-inline: auto;
+  padding-block: auto;
+  
+}
+
+.skill-text {
+text-align: left;
+padding-inline: 1rem;
+padding-block: 2rem;
+
+}
+
+.skill-text h5 {
+  
+ margin-bottom: 1.5rem;
+  
+}
+
+.skill-text p {
+  
+ margin-bottom: 1rem;
+  
+}
+
+.skill-text a {
+
+  margin-top: 1.5rem;
+
+}
+
+
