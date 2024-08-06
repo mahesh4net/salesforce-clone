@@ -114,7 +114,8 @@ a:hover {
 
 .secondary-btn:hover {
  font-size: 1rem;
- background-color: white;
+ background-color: rgba(0, 0, 200, 0.1);
+ 
  font-weight: 500;
  border: 3px solid black;
  color: black;
@@ -152,7 +153,6 @@ nav {
 }
 
 .navbar i {
-  font-size: 1rem;
   color: black;
   transition: 0.3s;
   text-decoration: none;
@@ -160,7 +160,6 @@ nav {
 }
 
 .navbar i:hover {
-  font-size: 1rem;
   color: blue;
   text-decoration: none;
 }
@@ -485,7 +484,7 @@ nav {
 
 .skills {
   padding-block: 3rem;
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,250,255,1) 100%);
+  background: white;
   text-align: center;
 }
 
@@ -507,7 +506,7 @@ nav {
  justify-content: center;
  align-items: center;
  gap: 1rem;
- 
+ margin-bottom: 5rem;
  
  
 }
@@ -519,14 +518,19 @@ nav {
  border-radius: 1rem;
  overflow: hidden;
  text-align: left;
+
 }
 
 .skill-img {
   display: inline-block;
   width: 45%;
   height: auto;
-  padding-inline: auto;
-  padding-block: auto;
+  
+  margin-inline: 27.5%;
+  margin-top: 1rem;
+  
+ 
+ 
   
 }
 
@@ -539,14 +543,24 @@ padding-block: 2rem;
 
 .skill-text h5 {
   
- margin-bottom: 1.5rem;
+ margin-bottom: 1rem;
   
 }
 
 .skill-text p {
   
- margin-bottom: 1rem;
+ margin-bottom: 1.5rem;
   
+}
+
+.skill-text p:first-child {
+  padding: 0.2rem 0.7rem;
+  background-color: rgba(0, 0, 250, 0.2);
+  font-size: 1rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+
 }
 
 .skill-text a {
@@ -555,4 +569,60 @@ padding-block: 2rem;
 
 }
 
+.skill-btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
 
+
+/*----brands section-----*/
+
+.brands {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,250,255,1) 100%);
+  text-align: center;
+  padding: -5rem;
+}
+
+.brands .container {
+  padding: 4rem 10vw 2rem;
+}
+
+.brands .container h2 {
+ margin-bottom: 2rem; 
+}
+
+.brands .container a {
+  margin-bottom: 2rem;
+  display: inline-block;
+  padding-inline: auto;
+}
+
+.brand-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: -4rem;
+}
+
+.brand-card {
+  background-color: white;
+  width: calc(33% - 0.6rem);
+  box-shadow: 0rem 0.4rem 0.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 1rem 2rem;
+}
+
+
+.curved-bg img {
+  width: 100%;
+  height: auto;
+  
+  margin-bottom: -4rem;
+  
+}
+
+.cta-mid {
+  margin-top: 5rem;
+}
