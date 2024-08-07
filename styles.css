@@ -136,6 +136,7 @@ img {
 
 .navbar {
   position: relative;
+  z-index: 99;
 }
 
 nav {
@@ -1111,7 +1112,7 @@ padding-block: 2rem;
   align-items: center;
   gap: 1rem;
   padding-top: 1rem;
-  padding-left: 1.5rem;
+  padding-inline: 1rem;
   padding-bottom: 1.5rem;
   flex-wrap: wrap;
 }
