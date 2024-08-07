@@ -486,6 +486,11 @@ nav {
   gap: 1.5rem;
 }
 
+.cta-btn a {
+  width: 50%;
+}
+
+
 
 /*------skill section------*/
 
